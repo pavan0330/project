@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Alert System</title>
+    <style>
+        body { text-align: center; padding: 20px; background-color: #f0f0f0; }
+        h1 { color: #444; }
+        video { width: 80%; max-width: 800px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>CCTV Live Stream</h1>
+    <video id="video" autoplay>
+        <source src="{{ url_for('video_feed') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
